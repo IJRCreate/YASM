@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "sveltekit-adapter-chrome-extension": "^2.0.1"
+    "sveltekit-adapter-chrome-extension": "^2.0.1",
+    "typedoc": "^0.28.5"
   }
 }
