@@ -6,9 +6,18 @@
 
     const threatIntelligencePlatforms: URL[] = $state([])
 
+    function handleSubmit(event: SubmitEvent) {
+        event.preventDefault();
+        const form = event.target as HTMLFormElement;
+        const formData = new FormData(form);
+        addthreatIntelligencePlatform(formData, threatIntelligencePlatforms);
+        }
+
 </script>
 
-<form onsubmit={(event) => addthreatIntelligencePlatform(event, threatIntelligencePlatforms)}>
+<h1>YASM</h1>
+
+<form onsubmit={handleSubmit}>
 	<label>
 		Add a new threat intelligence URL to query:
 		<input
